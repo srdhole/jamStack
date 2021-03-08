@@ -1,0 +1,28 @@
+{
+    "services": [
+        {
+            "name": "Dental Exam and X-ray"
+        },
+        {
+            "name": "Root Canal"
+        },
+        {
+            "name": "Teeth Whitening"
+        },
+        {
+            "name": "Dental Implant"
+        },
+        {
+            "name": "Teeth cleaning"
+        },
+        {
+            "name": "Cavities"
+        },
+        {
+            "name": "Gum Disease"
+        },
+        {
+            "name": "Invaslin"
+        }
+    ]
+}

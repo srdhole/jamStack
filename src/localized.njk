@@ -1,0 +1,29 @@
+---
+
+title: country news
+layout: base.njk
+pagination:
+  data: news
+  size: 1
+  alias: news
+permalink: /{{news.country}}/index.html
+
+---
+
+<div class="container">
+    <h1>This is home page</h1>
+    <div>
+        <ul>
+            {% for article in news.articles %}
+                <li>
+                    <h4>
+                        <a href="article.url">{{article.title}}</a>
+                    </h4>
+                    <hr>
+                    <span>{{article.publishedAt}}</span>
+                    <span>{{article.author}}</span>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>

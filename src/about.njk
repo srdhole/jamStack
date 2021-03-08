@@ -1,8 +1,16 @@
 ---
- title:About page
- layout:base.njk
+
+ title: About page
+ layout: base.njk
+ 
 ---
 <div class="container">
-        <h1>This is your page</h1>
-        <p>This is about page</p>
+        <h1>This is about us page</h1>
+        <div>
+                <ul>
+                        {% for service in allServices.services %}
+                                <li>{{service.name}}</li>
+                        {% endfor %}
+                </ul>
+        </div>
 </div>
