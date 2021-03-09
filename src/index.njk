@@ -9,15 +9,9 @@
         <h1>This is home page</h1>
 
         <div>
-                <ul>
-                        {% for article in news.articles %}
-                                <li>
-                                        <h4>
-                                                <a href="article.url">{{article.name}}</a>
-                                        </h4>
-                                        <p>{{article.author}}</p>
-                                </li>
-                        {% endfor %}
-                </ul>
+                {% for item in news %}
+                        <a href="/{{ item.country}}">{{ item.country }}</a>
+                {% endfor %}
         </div>
+
 </div>

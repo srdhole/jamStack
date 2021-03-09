@@ -5,14 +5,14 @@ const countries = require("./countries.json");
 
 async function getNews(country) {
     try {
-        const response = await axios.get(`https://newsapi.org/v2/sources?country=${country}&apiKey=6e6bf2b3bcf34132a6d32e734030705c`);
+        const response = await axios.get(`https://newsapi.org/v2/sources?country=${country}&apiKey=${process.env.API_KEY}`);
         // return response.data;
-        console.log(response.data.articles);
+        console.log(response.data.sources);
         // console.log(response.data);
 
         return {
             "country": country,
-            "articles": response.data.articles
+            "articles": response.data.sources
         }
 
     }

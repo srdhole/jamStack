@@ -7,10 +7,10 @@
 <div class="container">
         <h1>This is about us page</h1>
         <div>
-                <ul>
-                        {% for service in allServices.services %}
-                                <li>{{service.name}}</li>
-                        {% endfor %}
-                </ul>
+
+                {% for service in allServices.services %}
+                        {{service.name}}<br>
+                {% endfor %}
+
         </div>
 </div>
